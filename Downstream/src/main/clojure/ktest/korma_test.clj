@@ -46,7 +46,7 @@
             ))
         )
       ;update the end-time
-      (k/update my-table
+      (korma.core/update my-table
                 (k/set-fields {:end_time (java.sql.Timestamp. (.getTime (Date.)))})
                 (k/where {:id (:generated_key r-id)}))
       (println "Done with test-run!")
@@ -54,6 +54,6 @@
       )))
 
 (defn update-table[]
-  (k/update my-table
+  (korma.core/update my-table
           (k/set-fields {:end_time (java.sql.Timestamp. (.getTime (Date.)))})))
 
