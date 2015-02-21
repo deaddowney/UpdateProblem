@@ -1,0 +1,13 @@
+
+# /
+target
+*.iml
+/.project
+/.classpath
+*.bak
+*.DS_Store
+/package
+/log
+/data
+/deploy
+/dependency-reduced-pom.xml
