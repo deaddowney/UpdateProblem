@@ -5,6 +5,9 @@ Project Downstream depends on project Deps.  Project Deps uses korma 0.4.0 and c
 
 Project Downstream uses clojure 1.7.0-master-SNAPSHOT and Korma 0.4.1, both of which work around the update problem.
 
+To build, run from the top level
+
+    mvn install
 When Downstream compiles, it runs into an issue with update.
 
     Exception in thread "main" java.lang.RuntimeException: No such var: k/update, compiling:(ktest/korma_test.clj:49:7)
